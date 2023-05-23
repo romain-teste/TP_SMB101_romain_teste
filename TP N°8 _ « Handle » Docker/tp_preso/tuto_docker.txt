@@ -1,0 +1,27 @@
+docker images -> liste les image disponible 
+docker ps -> liste les conteneur dispo
+docker pull node -> recupe l'image de node JS
+docker run -it node -> run l'image node
+sudo docker stop 9c07342194e9 -> stop le conteuneur qui a pour docker ID: 9c07342194e9
+sudo docker run -it -d node -> run l'image node en arrier plan
+
+faire tourner un serveur nginx
+sudo docker pull nginx
+sudo docker run -d -p 8080:80 nginx -> run une image nginx en arrier plant sur le port 8080 http://127.0.0.1:8080/
+docker exec -ti 0b5b8872fdd5 bash -> ouvre un terminal dans le conteneur 
+docker system prune -> clean du system
+
+créer sont image docker avec un docker file
+voir le docker file
+docker build -t nom_de_mon_image . -> construi mon image docker
+sudo docker run -d -p 2368:2368 nom_de_mon_image
+
+docker push nom_de_mon_image -> pour push son image
+docker serch nom_de_mon_image -> pour chercher sont image
+
+
+
+
+
+
+
